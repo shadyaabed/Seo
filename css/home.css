@@ -467,7 +467,26 @@ h6 {
   display: none;
 }
 
-.my_cv .main_content .home_container .header h1 {
+.my_cv .main_content .home_container .header .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.my_cv .main_content .home_container .header .head img {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+}
+
+.my_cv .main_content .home_container .header .head h1 {
   font-family: "Archivo", sans-serif;
   margin: 0;
   position: relative;
@@ -475,12 +494,12 @@ h6 {
 }
 
 @media (max-width: 992px) {
-  .my_cv .main_content .home_container .header h1 {
+  .my_cv .main_content .home_container .header .head h1 {
     margin-top: 50px;
   }
 }
 
-.my_cv .main_content .home_container .header h1::after {
+.my_cv .main_content .home_container .header .head h1::after {
   position: absolute;
   content: "";
   bottom: -15px;
